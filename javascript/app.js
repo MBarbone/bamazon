@@ -89,7 +89,7 @@ function bamazonPurchase(){
                     connection.query(queryStockUpdate, function (err, res){
                         if(err) throw err;
 
-                        console.log(`Your order has been placed. Your total is: $${productData * quantity}. Thank you for shopping with us!`);
+                        console.log(`Your order has been placed. Your total is: $${productData.price * quantity}. Thank you for shopping with us!`);
 
                         connection.end();
                     });
