@@ -74,7 +74,7 @@ function bamazonPurchase(){
 
             if (res.length === 0){
                 console.log('ERROR: Invalid Item ID. Please select a valid item.');
-                bamazonStock();
+                runBamazon();
 
             }else{
 
@@ -98,7 +98,7 @@ function bamazonPurchase(){
                     console.log('There are not enough of the product to cover your order. Please modify your order.');
                 };
 
-                bamazonStock();
+                runBamazon();
             };
         });
     });
